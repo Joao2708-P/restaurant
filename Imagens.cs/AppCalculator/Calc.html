@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./Calc.css/calc.css">
+    <script src="./Calc.js/calc.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <form class="calculator" name="calc">
+        <input class="value" type="text" name ="txt" readonly="">
+        <input class="num clear" type="reset" value="C">
+        <span class="num" onclick="document.calc.txt.value +='Divisão'">/</span>
+        <span class="num" onclick="document.calc.txt.value +='Multiplicação'">*</span>
+        <span class="num" onclick="document.calc.txt.value +='✌✌'">7</span>
+        <span class="num" onclick="document.calc.txt.value +='8'">8</span>
+        <span class="num" onclick="document.calc.txt.value +='Oi'">9</span>
+        <span class="num" onclick="document.calc.txt.value +='Subtração'">-</span>
+        <span class="num" onclick="document.calc.txt.value +='4'">4</span>
+        <span class="num" onclick="document.calc.txt.value +='Salve'">5</span>
+        <span class="num" onclick="document.calc.txt.value +='Olá Mundo'">6</span>
+        <span class="num plus" onclick="document.calc.txt.value +='Aqui se faz a soma!'">+</span>
+        <span class="num" onclick="document.calc.txt.value +='Boa noite'">3</span>
+        <span class="num" onclick="document.calc.txt.value +='Boa Tarde'">2</span>
+        <span class="num" onclick="document.calc.txt.value +='Olá Mundo!'">1</span>
+        <span class="num" onclick="document.calc.txt.value +='Bom dia'">0</span>
+        <span class="num" onclick="document.calc.txt.value +='Potenciação'">**</span>
+        <span class="num" onclick="document.calc.txt.value +=','">,</span>
+        <span class="num equal" onclick="document.calc.txt.value = alert(calc.txt.value)">=</span>
+    </form>
+         
+    <script  src="./Calc.js/vanilla-tilt.js"></script>
+   <script>
+     VanillaTilt.init(document.querySelectorAll(".calculator"),{
+      max: 25,
+      speed: 400
+       });
+    </script>
+</body>
+</html>
